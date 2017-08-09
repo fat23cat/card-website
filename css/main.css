@@ -2878,7 +2878,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   display: inline-block;
-  font-size: 0px; }
+  font-size: 0px;
+  width: 720px; }
 
 .page-content {
   display: inline-block; }
@@ -2951,12 +2952,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   font-family: 'fira_sansbold'; }
 
-.career__title {
+.career__title, .portfolio__title {
   display: block;
   width: 700px;
   padding-left: 20px; }
 
-.career__titletext {
+.career__titletext, .portfolio__titletext {
   font-size: 35px;
   font-family: 'fira_sansregular';
   text-align: left;
@@ -3062,6 +3063,17 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 21px;
     margin-top: -5.5px;
     top: 50%; }
+
+.portfolio__block {
+  width: 220px;
+  height: 280px;
+  border-radius: 9px;
+  margin: 0 0 20px 20px;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
 
 .sidebar {
   width: 220px;

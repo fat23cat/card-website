@@ -5,6 +5,7 @@
 .about {
 	display: inline-block;
 	font-size: 0px;
+	width: 720px;
 }
 
 .page-content {
@@ -96,13 +97,13 @@
 //career
 
 
-.career__title {
+.career__title, .portfolio__title {
 	display: block;
 	width: 700px;
 	padding-left: 20px;
 }
 
-.career__titletext {
+.career__titletext, .portfolio__titletext {
 	font-size: 35px;
 	@include fira(regular);
 	text-align: left;
@@ -249,3 +250,14 @@
 	}
 }
 
+//portfolio
+
+.portfolio__block {
+	width: 220px;
+	height: 280px;
+	border-radius: 9px;
+	margin: 0 0 20px 20px;
+	display: inline-block;
+	background-color: white;
+	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+}
