@@ -1,0 +1,35 @@
+@mixin box-shadow($shadow) {
+	box-shadow: $shadow;
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+}
+
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin fira($style) {
+    @if $style == regular {
+        font-family: 'fira_sansregular';
+    }
+
+    @if $style == bold {
+        font-family: 'fira_sansbold';
+    }
+
+    @if $style == light {
+        font-family: 'fira_sanslight';
+    }
+
+    @if $style == medium {
+        font-family: 'fira_sansmedium';
+    }
+
+    @if $style == awesome {
+    	font-family: 'fontawesomeregular';
+    }
+}

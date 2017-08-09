@@ -1,0 +1,54 @@
+.sidebar {
+	width: 220px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.nav__list {
+	text-align: right;
+	//line-height: 35px;
+	@include fira(regular);
+	font-size: 18px;
+}
+
+.nav__item {
+	padding-bottom: 10px;
+}
+
+.nav__link_item {
+	&:link {
+		text-decoration: none;
+		color: $darkGray;
+	}
+
+	&:visited {
+		text-decoration: none;
+		color: $darkGray;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $blue;
+	}
+
+	&:active {
+		text-decoration: none;
+		@include fira(bold);
+		color: $blue;
+	}
+}
+
+
+.nav__link {
+	padding: 5px 20px 5px 0;
+	border-right: 5px solid transparent;
+
+	&:hover {
+		border-right: 5px solid $blue;
+	}
+}
+
+.fa {
+	padding-right: 10px;
+}

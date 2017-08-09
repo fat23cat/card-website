@@ -1,0 +1,251 @@
+.content {
+	font-size: 0px;
+}
+
+.about {
+	display: inline-block;
+	font-size: 0px;
+}
+
+.page-content {
+	display: inline-block;
+}
+
+.about__left {
+	width: 220px;
+	height: 220px;
+	padding: 0 60px 0 60px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.about__userpic {
+	max-width: 100%;
+	max-height: 100%;
+	border: 5px solid white;
+	border-radius: 50%;
+}
+
+.about__right {
+	display: inline-block;
+	width: 380px;
+	height: 390px;
+}
+
+.about__title {
+	margin-bottom: 20px;
+}
+ 
+
+.about__titletext {
+	font-size: 35px;
+	@include fira(regular);
+	text-align: left;
+	color: $darkGray;
+	margin-bottom: 15px;
+}
+
+.about__text {
+	display: inline-block;
+	width: 380px;
+	height: 290px;
+	overflow-y: scroll;
+	margin-bottom: 50px;
+		p {
+			font-size: 18px;
+			@include fira(regular);
+			color: $darkGray;
+			margin-top: 0px;
+		}
+}
+
+.button {
+	height: 36px;
+	width: 170px;
+	float: right;
+}
+
+.btn {
+	height: 36px;
+	width: 170px;
+	border: 2px solid #e85f61;
+	border-radius: 18px; 
+	color: #e85f61;
+	display: block;
+}
+
+.btn:hover {
+	background: #e85f61;
+}
+
+.btn:hover .btn__text {
+	color: white;
+}
+
+.btn__text {
+	margin-left: 20px;
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 14px;
+	font-size: 14px;
+	@include fira(bold);
+}
+
+//career
+
+
+.career__title {
+	display: block;
+	width: 700px;
+	padding-left: 20px;
+}
+
+.career__titletext {
+	font-size: 35px;
+	@include fira(regular);
+	text-align: left;
+	color: $darkGray;
+	display: inline-block;
+	margin-top: -15px;
+}
+
+.career__left {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+}
+
+.career__userpic {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 9px;
+}
+
+.career__right {
+	display: inline-block;
+	width: 480px;
+}
+
+.career__text {
+	display: inline-block;
+	width: 480px;
+	height: 100%;
+}
+
+.career_copm {
+	color: $darkGray;
+}
+
+.career__year {
+	font-size: 14px;
+}
+
+.career__item {
+	&:first-child {
+		.career__block {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	&:last-child {
+		.career__block {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.career__block {
+	margin-bottom: 21px;
+	font-size: 21px;
+	width: 340px;
+	@include fira(regular);
+	float: right;
+	color: $gray;
+	position: relative;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: white;
+	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+
+		&:hover {
+			background-color: $blue;
+			color: white;
+		}
+
+		&:hover .career__year {
+			color: $blue;
+			@include fira(bold);
+			font-size: 18px;
+		}
+
+		&:hover .career__year {
+			&:after {
+				border: 5px solid #94e0f2;
+				right: -34.5px;
+				line-height: 21px;
+				margin-top: -10.5px;
+				top: 50%;
+
+		}
+
+		}
+
+		&:hover .career_copm {
+			color: white;	
+		}
+
+
+		&:before, &:after {
+			content: "";
+			display: block;
+			width: 1px;
+			position: absolute;
+			background: #dddddd;
+			left: -20px;
+		}
+
+		&:before {
+			top: 0;
+			bottom: 50%;
+			margin-bottom: 10.5px;
+		}
+
+		&:after {
+			top: 50%;
+			bottom: -22px;
+			margin-top: 10.5px;
+		}
+
+}
+
+.career__year {
+	position: absolute;
+	top: 50%;
+	line-height: 20px;
+	margin-top: -10px;
+	right: 423.5px;
+	float: right;
+	font-size: 14px;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		background: $blue;
+		z-index: 1;
+		right: -29.5px;
+		line-height: 21px;
+		margin-top: -5.5px;
+		top: 50%;
+	}
+}
+

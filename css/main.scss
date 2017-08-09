@@ -1,0 +1,17 @@
+$gray: #727272;
+$darkGray: #414141;
+$white: #f6f6f6;
+$blue: #33c1e3;
+$red: #e85f61;
+
+
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+@import "_misc/font-awesome";
+
+@import "_misc/fonts";
+@import "sections/header";
+@import "sections/footer";
+@import "sections/page-content";
+@import "sections/sidebar";

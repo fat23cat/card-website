@@ -1,0 +1,41 @@
+.footer {
+	background: $darkGray;
+	height: 50px;
+	width: 100%; 
+	margin-top: -50px;
+	position: relative;
+	min-width: 960px;
+	font-size: 0px;
+}
+
+
+.footer__left, .footer__right {
+	width: 50%;
+	height: 50px;
+	line-height: 80px;
+	display: inline-block;
+	font-size: 16px;
+}
+
+.socials__link {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+.socials, .socials__item {
+	float: right;
+	line-height: 50px;
+}
+
+@each $social in (fb, vk, tw) {
+	.socials__link_#{$social} {
+		background: url("../images/icons/footer/#{$social}.png") 0 0 no-repeat;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 8px;
+		&:hover {
+			background: url("../images/icons/footer/#{$social}_focus.png") 0 0 no-repeat;
+		}
+	}
+}
