@@ -193,15 +193,13 @@
 				line-height: 21px;
 				margin-top: -10.5px;
 				top: 50%;
-
-		}
+			}
 
 		}
 
 		&:hover .career_copm {
 			color: white;	
 		}
-
 
 		&:before, &:after {
 			content: "";
@@ -223,7 +221,6 @@
 			bottom: -22px;
 			margin-top: 10.5px;
 		}
-
 }
 
 .career__year {
@@ -257,7 +254,51 @@
 	height: 280px;
 	border-radius: 9px;
 	margin: 0 0 20px 20px;
+	line-height: 1;
 	display: inline-block;
 	background-color: white;
+	@include fira(regular);
 	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+	
+	&:hover .portfolio__name {
+		color: $red;
+	}
+}
+
+@each $links in (deals, dream, creative, frog, carbonara) {
+	.portfolio__block_#{$links} {
+		background-image: url(../images/portfolio/#{$links}.png);
+		background-repeat: no-repeat;
+	}
+}
+
+.portfolio__name {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 192px;
+	font-size: 21px;
+	color: $blue;
+}
+
+.portfolio__desc {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 12px;
+	font-size: 14px;
+	color: $darkGray;
+	width: 180px;
+}
+
+.portfolio__type {
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color: $gray;
+}
+
+.fa {
+	font-size: 18px;
+	margin-right: -5px;
 }
