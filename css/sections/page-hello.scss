@@ -1,0 +1,76 @@
+.enter-site {
+	width: 300px;
+	height: 232px;
+	border-radius: 9px;
+	background-color: white;
+	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+	margin: auto;
+	margin-top: 220px;
+	position: relative;
+}
+
+.enter-site__top {
+
+}
+
+.enter-username {
+	position: absolute;
+	font-size: 21px;
+	@include fira(regular);
+	color: $darkGray;
+	width: 120px;
+	text-align: center;
+	display: inline-block;
+	margin: 90px 0 0 90px;
+}
+
+.enter-user {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	margin: -70px 0 0 78px;
+}
+
+.enter-user__img {
+	max-height: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+	border: 3px solid #d7d7d7;
+}
+
+.enter-site__bottom {
+	height: 78px;
+	width: 300px;
+	margin-top: 154px;
+	border-radius: 0 0 9px 9px;
+	position: absolute;
+	background-color: $blue;
+}
+
+.enter-button {
+	width: 134px;
+	height: 36px;
+	margin: auto;
+	margin-top: 18px;
+	border-radius: 18px;
+	border: 2px solid white;
+
+	&:hover {
+		background-color: white;
+	}
+
+	&:hover .enter-button__text {
+		color: $blue;
+	}
+}
+
+.enter-button__text {
+	display: inline-block;
+	width: 134px;
+	height: 36px;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	@include fira(bold);
+	margin: 10px 0 0 13px;
+}
